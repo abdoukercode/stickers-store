@@ -4,8 +4,11 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: {
-      filename: 'postgres://localhost/stickers-store'
-    }
-  
-};
+    connection: 'postgres://127.0.0.1/stickers-store'
+  },
+
+  test: {
+    client: 'pg',
+    connection: 'postgres://127.0.0.1/test-stickers-store'
+  }
+}
